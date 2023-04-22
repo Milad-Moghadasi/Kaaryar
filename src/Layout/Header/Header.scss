@@ -1,0 +1,42 @@
+header {
+    height: 10vh;
+
+    .container {
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+        
+        .logo {
+            height: 100%;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            margin-right: 2em;
+            a {
+                padding: 0.5em 1.2em;
+
+                &.active {
+                    border-bottom: 4px solid #0E994A;
+                    padding-bottom: 0.2em;
+                }
+            }
+
+        }
+
+        .enter {
+            display: flex;
+            align-items: center;
+            
+            button {
+                background-color: #0E994A;
+                color: white;
+                padding: 0.7em 2em;
+                border-radius: 4px;
+                border: none;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
