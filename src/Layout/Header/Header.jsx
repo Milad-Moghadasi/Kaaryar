@@ -1,6 +1,6 @@
 import './Header.scss';
 import { NavLink } from "react-router-dom";
-import logo from "../../img/logo.png"
+import logo from "../../img/headerimg/kaaryar-logo.png"
 
 function Header() {
   return (
