@@ -24,7 +24,18 @@ import navmentor2 from "../../img/homesectionimg/navmentor2.png"
 import zahedan from "../../img/homesectionimg/zahedan.jpg"
 import tehran from "../../img/homesectionimg/Tehran.jpg"
 import data from "../../img/homesectionimg/data.jpg"
-
+import volpic from "../../img/homesectionimg/volpic.png"
+import institution1 from "../../img/homesectionimg/institution1.png"
+import institution2 from "../../img/homesectionimg/institution2.png"
+import institution3 from "../../img/homesectionimg/institution3.png"
+import institution4 from "../../img/homesectionimg/institution4.png"
+import institution5 from "../../img/homesectionimg/institution5.png"
+import institution6 from "../../img/homesectionimg/institution6.png"
+import institution7 from "../../img/homesectionimg/institution7.png"
+import institution8 from "../../img/homesectionimg/institution8.png"
+import user from "../../img/homesectionimg/userPlus.png"
+import student from "../../img/homesectionimg/student.png"
+import coins from "../../img/homesectionimg/coins.png"
 
 
 function Home() {
@@ -315,6 +326,137 @@ function Home() {
               <a href=".">بیشتر بخوانید</a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="volunteer container1">
+        <div className="volhead">
+          <h2>جشن تقدیر از داوطلبان کاریار </h2>
+        </div>
+        <div className="volbody">
+          <div className="slidshow">
+            <div className="slidiconright">
+              <img src={circleRight} alt="circleRightpic" />
+            </div>
+            <div className="slidmainpic">
+              <img src={volpic} alt="volpic" />
+            </div>
+            <div className="slidiconleft">
+              <img src={circleLeft} alt="circleleftpic" />
+            </div>
+          </div>
+          <div className="navslid">
+            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
+            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
+            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
+            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
+            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
+            <a href="."><img src={navmentor1} alt="navmentor2" /></a>
+          </div>
+        </div>
+        <div className="volcap">
+          <p>کاریار با هدف مهارت آموزی و ایجاد فرصت درآمدزایی برای جوانان این مرز و بوم و با پشتوانه نیروهای داوطلب و بسیار حرفه ای کارش را آغاز کرد. </p>
+          <a href=".">بیشتر بخوانید</a>
+        </div>
+      </div>
+      <div className="institutions container1">
+        <div className="headinstitutions">
+          <h2>موسسات همکار</h2>
+          <button>همکاری با کاریار</button>
+        </div>
+        <div className="bodyinstitutions">
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution1} alt="institution1pic" />
+            </div>
+            <div className="insname">
+              <p>انجمن یاران دانش و مهر</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution2} alt="institution2pic" />
+            </div>
+            <div className="insname">
+              <p>مؤسسه نیکوکاری امین آراسته</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution3} alt="institution3pic" />
+            </div>
+            <div className="insname">
+              <p>موسسه آموزشی نیکوکاری رعد</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution4} alt="institution4pic" />
+            </div>
+            <div className="insname">
+              <p>بنیاد کودک</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution5} alt="institution5pic" />
+            </div>
+            <div className="insname">
+              <p>موسسه نیکو کاری سلوک پویا</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution6} alt="institution6pic" />
+            </div>
+            <div className="insname">
+              <p>موسسه نورالزهرا</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution7} alt="institution7pic" />
+            </div>
+            <div className="insname">
+              <p>بنیاد توسعه کارآفرینی زنان و جوانان</p>
+            </div>
+          </div>
+          <div className="institution">
+            <div className="inspic">
+              <img src={institution8} alt="institution8pic" />
+            </div>
+            <div className="insname">
+              <p>بنیاد سپهر</p>
+            </div>
+          </div>
+
+        </div>
+        <div className="seemore">
+          <button>مشاهده همه</button>
+        </div>
+      </div>
+      <div className="jobroad container1">
+        <div className="headroad">
+          <h1>مسیر شغلی خود را از همین امروز شروع کنید</h1>
+        </div>
+        <div className="icons">
+          <div className="user">
+            <img src={user} alt="usericon" />
+            <p>به ما بپیوندید</p>
+          </div>
+          <div className="student">
+            <img src={student} alt="studenticon" />
+            <p>آموزش کاربردی ببینید </p>
+          </div>
+          <div className="coins">
+            <img src={coins} alt="coinsicon" />
+            <p> بعد از رسیدن به درآمد هزینه‌اش را بپردازید</p>
+          </div>
+        </div>
+        <div className='jobroadbtn'>
+          <button>همین حالا ثبت نام کنید</button>
+        </div>
+        <div className='roadcap'>
+          <p>سوالی دارید که پاسخش را پیدا نکردید؟ <a href=".">پرسش‌های پرتکرار</a> را ببینید</p>
         </div>
       </div>
     </section>
