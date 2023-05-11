@@ -190,10 +190,11 @@ section.home {
                     p {
                         padding: 1em 0 1.5em 2em;
                     }
+
                     ul {
                         padding-right: 1em;
                     }
-                    
+
                 }
 
                 .detailbtn {
@@ -203,9 +204,231 @@ section.home {
                     cursor: pointer;
                     width: 100%;
                     border-radius: 0 0 14px 14px;
+
                     h3 {
                         padding: 2em;
 
+                    }
+                }
+            }
+        }
+    }
+
+    .studentcoments {
+        margin-bottom: 3em;
+
+        .headtext {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chngicon {
+            display: flex;
+        }
+
+        .students {
+            display: flex;
+            margin: 2em 0;
+
+            .student {
+                .coments {
+                    border: 1px solid #0E994A;
+                    border-radius: 14px;
+                    padding: 1em 0.5em;
+                    margin-left: 1em;
+
+                    .bio {
+                        display: flex;
+                        align-items: center;
+
+                        .studentpic {
+                            margin-left: 1em;
+
+                            img {
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+
+                    .coment {
+                        display: flex;
+
+                        .comenticon {
+                            padding: 0.5em 0.5em 1em 1em;
+                        }
+
+                        p {
+                            margin-top: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mentors {
+        .headmentor {
+            h2 {
+                margin: 2em 0;
+            }
+        }
+
+        .bodymentor {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../../img/homesectionimg/mentorBg.png);
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+
+            .mentor2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 45%;
+                    border-radius: 100%;
+                }
+            }
+
+            .mentor1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                h4 {
+                    margin: 1em 0;
+                }
+
+                p {
+                    margin: 1em 0;
+                }
+
+                .pcaption {
+                    width: 75%;
+                    border: 1px solid #0E994A;
+                    border-radius: 14px;
+                    background-color: #FFFFFF;
+                    padding: 2.5em 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+
+                    p {
+                        line-height: 28px;
+                        padding: 0.5em;
+
+                        .span1 {
+                            margin-left: 1em;
+                        }
+
+                        .span2 {
+                            margin-right: 1em;
+                        }
+                    }
+
+                    img {
+                        transform: rotate(180deg);
+                        width: 5%;
+                        border: none;
+                    }
+
+                }
+
+                img {
+                    width: 40%;
+                    border-radius: 100%;
+                    border: 8px solid #0E994A;
+                }
+
+                .navmentor {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        margin: 0.2em;
+                        padding: 1em 0;
+
+                        img {
+                            border: none;
+                            border-radius: none;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                button {
+                    color: #FFFFFF;
+                    background: #0E994A;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 0.7em 2em;
+                    font-size: larger;
+                }
+            }
+
+            .mentor3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50%;
+                    height: 30%;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+    .news {
+        margin-top: 5em;
+        .headnews {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2em;
+
+            a {
+                color: #0E994A;
+            }
+        }
+
+        .bodynews {
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            .newscard {
+                height: 100%;
+                // display: grid;
+                // grid-template-rows: repeat(3 ,1fr);
+                border: 1px solid #0E994A;
+                border-radius: 14px;
+                padding: 2em 3em;
+                margin-left: 1em;
+                .newsimg {
+                    width: 100%;
+                    margin-bottom: 1em;
+                    img {
+                        width: 100%;
+                        border-radius: 16px;
+                    }
+                }
+                .newsdetial {
+                    text-align: right;
+                    margin: 1em 0;
+                    h3 {
+                        margin-bottom: 1em;
+                    }
+                }
+
+                .readmore {
+                    margin: 2em 0;
+                    text-align: center;
+                    a {
+                        color: #0E994A;
                     }
                 }
             }

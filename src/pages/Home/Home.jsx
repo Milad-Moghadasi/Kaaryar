@@ -9,6 +9,23 @@ import backendicon from "../../img/homesectionimg/backendicon.png"
 import frontendicon from "../../img/homesectionimg/frontendicon.png"
 import ICDLicon from "../../img/homesectionimg/ICDLicon.png"
 import dataanalysisicon from "../../img/homesectionimg/dataanalysisicon.png"
+import circleLeft from "../../img/homesectionimg/circleLeft.png"
+import circleRight from "../../img/homesectionimg/circleRight.png"
+import student1 from "../../img/homesectionimg/student1.png"
+import student2 from "../../img/homesectionimg/student2.png"
+import student3 from "../../img/homesectionimg/student3.png"
+import stars from "../../img/homesectionimg/stars.png"
+import comenticon from "../../img/homesectionimg/comenticon.png"
+import mentor1 from "../../img/homesectionimg/mentor1.jpg"
+import mentor2 from "../../img/homesectionimg/mentor2.jpg"
+import mentor3 from "../../img/homesectionimg/mentor3.jpg"
+import navmentor1 from "../../img/homesectionimg/navmentor1.png"
+import navmentor2 from "../../img/homesectionimg/navmentor2.png"
+import zahedan from "../../img/homesectionimg/zahedan.jpg"
+import tehran from "../../img/homesectionimg/Tehran.jpg"
+import data from "../../img/homesectionimg/data.jpg"
+
+
 
 function Home() {
   return (
@@ -158,11 +175,147 @@ function Home() {
       <div className="studentcoments container1">
         <div className="headtext">
           <h2>از مهارت آموزان کاریار بشنوید</h2>
+          <div className="chngicon">
+            <a href='.'><img src={circleRight} alt="icon" /></a>
+            <a href='.'><img src={circleLeft} alt="icon" /></a>
+          </div>
         </div>
-        <div className="chngicon">
-          
+        <div className="students">
+          <div className="student">
+            <div className="coments">
+              <div className="bio">
+                <div className="studentpic">
+                  <img src={student1} alt="studentpic" />
+                </div>
+                <div className="studentname">
+                  <h4>مجتبی یعقوب‌پور</h4>
+                  <img src={stars} alt="ratingicon" />
+                </div>
+              </div>
+              <div className="coment">
+                <div className="comenticon">
+                  <img src={comenticon} alt="comenticon" />
+                </div>
+                <p>من قبل اینکه وارد کاریار بشوم، کمی سرگردان بودم، نمی‌دانستم  کدام راه را انتخاب کنم و درسم را چه کار کنم. کاریار انگیزه من را برای آن حرفه‌ای که داشتم دنبال می‌کردم، بیشتر کرد.</p>
+              </div>
+            </div>
+          </div>
+          <div className="student">
+            <div className="coments">
+              <div className="bio">
+                <div className="studentpic">
+                  <img src={student2} alt="studentpic" />
+                </div>
+                <div className="studentname">
+                  <h4>فاطمه خواجه</h4>
+                  <img src={stars} alt="ratingicon" />
+                </div>
+              </div>
+              <div className="coment">
+                <div className="comenticon">
+                  <img src={comenticon} alt="comenticon" />
+                </div>
+                <p>من فکر می کنم سخت ترین بخش ، همین روند پیدا کردن کار باشد; منتورم در کاریار به من کمک کرد که در مسیر پیدا کردن شغل توانایی‌های خودم را آنطور که هست نشان بدهم و خودم را دست کم نگیرم</p>
+              </div>
+            </div>
+          </div>
+          <div className="student">
+            <div className="coments">
+              <div className="bio">
+                <div className="studentpic">
+                  <img src={student3} alt="studentpic" />
+                </div>
+                <div className="studentname">
+                  <h4>سهند کریم‌نژاد</h4>
+                  <img src={stars} alt="ratingicon" />
+                </div>
+              </div>
+              <div className="coment">
+                <div className="comenticon">
+                  <img src={comenticon} alt="comenticon" />
+                </div>
+                <p>بزرگترین دستاورد من از دوره‌های آموزشی کاریار، هدایت من برای ورود به دنیای کار برنامه‌نویسی و آشنا شدن با گزینه های پیش رویم است. کاریار و منتورها خیلی من را آگاه کردند و دیدم نسبت به قبل خیلی بازتر شده است.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div className="mentors container1">
+        <div className="headmentor">
+          <h2>از داوطلبان کاریار بشنوید</h2>
+        </div>
+        <div className="bodymentor">
+          <div className="mentor2">
+            <img src={mentor2} alt="mentorpic" />
+          </div>
+          <div className="mentor1">
+            <img src={mentor1} alt="mentorpic" />
+            <h4>امیرحسین کیانی</h4>
+            <p>ارشد علوم کامپیوتر دانشگاه استنفورد<br />
+              مدیر محصول شرکت گوگل<br />
+              منتور کاریار</p>
+            <div className="pcaption">
+              <p>
+                <span className='span1'><img src={comenticon} alt="comenticon" /></span>
+                هدف من برای همکاری با کاریار کمک به توسعه‌ی دسترسی افرادی است که دسترسی کمتری به منابع دارند و امیدوارم بتوانم الگوی مثبتی برای کارآموزهای کاریار باشم.
+                <span className='span2'><img src={comenticon} alt="comenticon" /></span>
+              </p>
+            </div>
+            <div className="navmentor">
+              <a href="."><img src={navmentor2} alt="navmentorpic" /></a>
+              <a href="."><img src={navmentor1} alt="navmentorpic" /></a>
+              <a href="."><img src={navmentor2} alt="navmentorpic" /></a>
+            </div>
+            <button>ثبت نام داوطلبان</button>
+          </div>
+          <div className="mentor3">
+            <img src={mentor3} alt="mentorpic" />
+          </div>
+        </div>
+      </div>
+      <div className="news container1">
+        <div className="headnews">
+          <h2>اخبار و دانستنی ها</h2>
+          <a href=".">مشاهده همه</a>
+        </div>
+        <div className="bodynews">
+          <div className="newscard">
+            <div className="newsimg">
+              <img src={zahedan} alt="newspic" />
+            </div>
+            <div className="newsdetial">
+              <h3>در رویداد “تا ... کد” زاهدان چه گذشت </h3>
+              <p>۱۰ اسفند ۱۴۰۱</p>
+            </div>
+            <div className="readmore">
+              <a href=".">بیشتر بخوانید</a>
+            </div>
+          </div>
+          <div className="newscard">
+            <div className="newsimg">
+              <img src={tehran} alt="newspic" />
+            </div>
+            <div className="newsdetial">
+              <h3>رویداد “ یادبگیر و به کار بگیر “ در تهران ، بیرجند و قائن برگزار شد. </h3>
+              <p>۱۰ اسفند ۱۴۰۱</p>
+            </div>
+            <div className="readmore">
+              <a href=".">بیشتر بخوانید</a>
+            </div>
+          </div>
+          <div className="newscard">
+            <div className="newsimg">
+              <img src={data} alt="newspic" />
+            </div>
+            <div className="newsdetial">
+              <h3>مهارت آموزان مسیر آموزشی  تحلیل داده ، پروژه پایانی خود را ارائه دادند. </h3>
+              <p>۹ اسفند ۱۴۰۱</p>
+            </div>
+            <div className="readmore">
+              <a href=".">بیشتر بخوانید</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
