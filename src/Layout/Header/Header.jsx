@@ -16,7 +16,9 @@ function Header() {
           <NavLink to="/about">درباره کاریار</NavLink>
         </div>
         <div className="enter">
-          <button>ورود به سامانه آموزشی</button>
+          <button>
+            <NavLink to="/login">ورود به سامانه آموزشی</NavLink>
+          </button>
         </div>
       </div>
     </header>
