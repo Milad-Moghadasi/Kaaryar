@@ -13,7 +13,7 @@ function Header() {
           <NavLink to="/" end>خانه</NavLink>
           <NavLink to="/educationCourses">دوره های آموزشی</NavLink>
           <NavLink to="/cooperation">همکاری با کاریار</NavLink>
-          <NavLink to="/about">درباره کاریار</NavLink>
+          <NavLink to="/team">درباره کاریار</NavLink>
         </div>
         <div className="enter">
           <button>

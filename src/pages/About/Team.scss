@@ -1,0 +1,61 @@
+.Team {
+    .container {
+        h1 {
+            text-align: center;
+            color: #0E994A;
+            padding: 1em 0;
+        }
+
+        .members_advisors , .members_executives , .members_consultants {
+
+            h2 {
+                padding: 1em;
+            }
+
+            .advisors , .executives , .consultants {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                .advisor , .executive , .consultant {
+                    background-image: url(../../img/about/team/background.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 1em;
+                    height: 400px;
+                    border: 1px solid #0E994A;
+                    border-radius: 14px;
+
+                    .advisorpic , .executivepic , .consultantpic {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1em;
+
+                        img {
+                            width: 70%;
+                            border-radius: 100%;
+                            opacity: 1;
+                            transition: 500ms;
+                        }
+
+                        img:hover {
+                            opacity: 1;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        }
+                    }
+
+                    .advisordetail , .executivedetail , .consultantsdetail {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}

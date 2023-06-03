@@ -1,0 +1,91 @@
+section.about {
+    h1 {
+        text-align: center;
+        color: #0E994A;
+        margin: 1em 0;
+    }
+
+    .imgtexts {
+     
+        .first {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 2em;
+            
+            .firsttext {
+                width: 55%;
+                border: 1px solid #0E994A;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2em;
+            }
+
+            .firstimg {
+                width: 45%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 14px;
+                }
+            }
+        }
+
+        .second {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 2em;
+            
+            .secondtext {
+                width: 55%;
+                border: 1px solid #0E994A;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2em;
+            }
+
+            .secondimg {
+                width: 45%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 14px;
+                }
+            }
+        }
+
+        .third {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 2em;
+            
+            .thirdtext {
+                width: 55%;
+                border: 1px solid #0E994A;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2em;
+            }
+
+            .thirdimg {
+                width: 45%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 14px;
+                }
+            }
+        }
+    }
+
+    .features {
+        margin: 2em 0;
+        display: flex;
+        justify-content: center;
+    }
+}
