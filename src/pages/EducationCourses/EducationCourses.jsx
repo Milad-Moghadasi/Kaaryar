@@ -104,10 +104,10 @@ function EducationCourses() {
           </div>
           <div className="otherdetail">
             <ul>
-              <li>فرانت‌اند مقدماتی‌(HTML, CSS)</li>
-              <li>فرانت‌اند پیشرفته‌(JavaScript)</li>
-              <li>React JS</li>
-              <li>WordPress</li>
+              <li><span>فرانت‌اند مقدماتی‌(HTML, CSS)</span></li>
+              <li><span>فرانت‌اند پیشرفته‌(JavaScript)</span></li>
+              <li><span>React JS</span></li>
+              <li><span>WordPress</span></li>
             </ul>
           </div>
           <div className="otherseecours">
@@ -125,8 +125,8 @@ function EducationCourses() {
           </div>
           <div className="otherdetail">
             <ul>
-              <li>مقدماتی ICDL</li>
-              <li>ICDL پیشرفته</li>
+              <li><span>مقدماتی ICDL</span></li>
+              <li><span>ICDL پیشرفته</span></li>
             </ul>
           </div>
           <div className="otherseecours">
@@ -143,9 +143,9 @@ function EducationCourses() {
           </div>
           <div className="otherdetail">
             <ul>
-              <li>مبانی برنامه نویسی و تفکر الگوریتمی</li>
-              <li>تحلیل داده مقدماتی با پایتون</li>
-              <li>تحلیل داده پیشرفته</li>
+              <li><span>مبانی برنامه نویسی و تفکر الگوریتمی</span></li>
+              <li><span>تحلیل داده مقدماتی با پایتون</span></li>
+              <li><span>تحلیل داده پیشرفته</span></li>
             </ul>
           </div>
           <div className="otherseecours">

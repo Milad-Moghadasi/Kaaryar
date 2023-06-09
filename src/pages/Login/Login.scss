@@ -25,13 +25,12 @@
             grid-template-columns: 1fr 3fr;
             border: 1px solid #0E994A;
             border-radius: 14px;
+            background-image: url(../../img/Login/background.png);
+            background-position: top right;
+            background-size: contain;
+            background-repeat: no-repeat;
 
             .right {
-                background-image: url(../../img/Login/loginformbg.png);
-                background-position: top right;
-                background-size: contain;
-                background-repeat: no-repeat;
-                height: 100%;
                 color: #fff;
                 padding: 1.5em 2em;
                 display: flex;

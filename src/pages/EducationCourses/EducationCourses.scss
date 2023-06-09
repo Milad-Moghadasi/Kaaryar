@@ -81,27 +81,29 @@ section.EducationCourses {
         .othercoursecard {
             border: 1px solid #0E994A;
             border-radius: 14px;
-            display: grid;
-            grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+            display: flex;
+            flex-direction: column;
 
             .otherhead,
             .othercap,
             .otherdetail {
-                padding: 0 1em;
-
+                padding: 0.5em 1em;
+                height: 100%;
             }
 
             .otherdetail {
 
                 ul {
-                    list-style: none;
+                    padding: 0 1em;
 
-                    li::before {
-                        content: "\2022";
+                    li {
+                        padding: 0.5em 0;
+                        font-size: 1em;
                         color: #0E994A;
-                        font-weight: bold;
-                        display: inline-block;
-                        width: 1em;
+
+                        span {
+                            color: black;
+                        }
                     }
                 }
             }
@@ -115,9 +117,43 @@ section.EducationCourses {
                 border-radius: 0 0 14px 14px;
 
                 h3 {
-                    padding: 1em;
+                    padding: 1.5em 1em;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.EducationCourses {
+        .container {
+            margin-top: 6em;
+            
+            .courseimg {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .backendroadmap {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .othercoursecards {
+            grid-template-columns: repeat(2 ,1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.EducationCourses {
+        .othercoursecards {
+            grid-template-columns: 1fr;
         }
     }
 }

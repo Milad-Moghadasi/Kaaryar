@@ -15,9 +15,15 @@ function Footer() {
           <img src={kaaryar} alt="kaaryarlogo" />
         </div>
         <div className="extralogo">
+          <div className="img">
           <img src={senfi} alt="senfilogo" />
+          </div>
+          <div className="img">
           <img src={khalagh} alt="khalaghlogo" />
+          </div>
+          <div className="img">
           <img src={enamad} alt="enamadlogo" />
+          </div>
         </div>
       </div>
       <div className="bodyfooter">

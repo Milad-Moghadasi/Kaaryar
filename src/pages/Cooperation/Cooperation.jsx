@@ -92,6 +92,31 @@ function Cooperation() {
             <button>ارسال فرم</button>
           </div>
         </div>
+          <div className="mobileform form">
+            <form>
+              <label>نام و نام خانوادگی</label><br />
+              <input type="text" placeholder='مانند سعید سعیدی' /><br />
+              <label>ایمیل</label><br />
+              <input type="email" placeholder='abc@gmail.com' /><br />
+              <label>مقطع تحصیلی</label><br />
+              <input type="text" placeholder='مانند کارشناس رشته کامپیوتر' /><br />
+              <label>شماره موبایل</label><br />
+              <input type="number" placeholder='09123456789' /><br />
+              <label>کشور محل سکونت</label><br />
+              <input type="text" placeholder='مانند ایران' /><br />
+              <label>استان محل سکونت</label><br />
+              <input type="text" placeholder='مانند تهران' /><br />
+              <label>زبان های برنامه نویسی و مهارت هایی که به آن مسلط هستید </label><br />
+              <input type="text" placeholder='مانند پایتون، جاوا اسکریپت و...' /><br />
+              <label>مدت زمانی که در هفته میتوانید وقت بگذارید</label>
+              <input type="text" placeholder='مانند ده ساعت' />
+              <label>تجربیات مشابه </label><br />
+              <textarea className='sameres' type="text" placeholder='اگر تجربیات مشابهی از تدریس ، دستیاری آموزشی ، منتورشیپ ، یا هرگونه کار داوطلبانه دارید، اینجا بنویسید.' /><br />
+            </form>
+          </div>
+          <div className="mobileformbtn">
+            <button>ارسال فرم</button>
+          </div>
       </div>
       <div className="contact">
         <h1>راه های ارتباطی با کاریار</h1>

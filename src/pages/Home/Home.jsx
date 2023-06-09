@@ -39,6 +39,8 @@ import coins from "../../img/homesectionimg/coins.png"
 
 
 function Home() {
+  
+
   return (
     <section className='home'>
       <div className="container">
@@ -126,9 +128,9 @@ function Home() {
               <h4>مسیر آموزش و اشتغال برنامه‌نویسی سمت سرور (بک‌اند)</h4>
               <p>در این دوره ابتدا با تفکر الگوریتمی و مدل حل مسئله آشنا می‌شوید و در مرحله‌ی بعد مدل حل مسئله با زبان پایتون و جنگو را می‌آموزید.</p>
               <ul>
-                <li>مبانی برنامه‌نویسی و تفکر الگوریتمی</li>
-                <li>پایتون پیشرفته</li>
-                <li>جنگو</li>
+                <li><span>مبانی برنامه‌نویسی و تفکر الگوریتمی</span></li>
+                <li><span>پایتون پیشرفته</span></li>
+                <li><span>جنگو</span></li>
               </ul>
             </div>
             <div className="detailbtn">
@@ -141,10 +143,10 @@ function Home() {
               <h4>مسیر آموزش و اشتغال برنامه‌نویسی سمت کاربر (فرانت‌اند)</h4>
               <p>در این دوره شما با زبان‌های HTML, CSS, JavaScript برای طراحی سایت آشنا می‌شوید. همه شرکت‌های بزرگ و کوچک و اشخاص حقیقی و کسب و کارهای خانوادگی به دنبال شما هستند تا سایتی برای آن‌ها طراحی کنید.</p>
               <ul>
-                <li>فرانت‌اند مقدماتی‌(HTML, CSS)</li>
-                <li>فرانت‌اند پیشرفته‌(JavaScript)</li>
-                <li>React JS</li>
-                <li>WordPress</li>
+                <li><span>فرانت‌اند مقدماتی‌(HTML, CSS)</span></li>
+                <li><span>فرانت‌اند پیشرفته‌(JavaScript)</span></li>
+                <li><span>React JS</span></li>
+                <li><span>WordPress</span></li>
               </ul>
             </div>
             <div className="detailbtn">
@@ -157,8 +159,8 @@ function Home() {
               <h4>مسیر آموزش و اشتغال امور اداری</h4>
               <p>در این دوره با دانش عمومی کامپیوتر، کار با مرورگرهای وب و اینترنت آشنا می‌شوید.</p>
               <ul>
-                <li>مقدماتی ICDL</li>
-                <li>ICDL پیشرفته</li>
+                <li><span>مقدماتی ICDL</span></li>
+                <li><span>ICDL پیشرفته</span></li>
               </ul>
             </div>
             <div className="detailbtn">
@@ -171,9 +173,9 @@ function Home() {
               <h4>تحلیل داده</h4>
               <p>تحلیلگر داده کسی است که می‌تواند از میان انبوه اطلاعات بدون ساختار، پاسخ سؤالات کسب و کاری را پیدا کند.</p>
               <ul>
-                <li>مبانی برنامه نویسی و تفکر الگوریتمی</li>
-                <li>تحلیل داده مقدماتی با پایتون</li>
-                <li>تحلیل داده پیشرفته</li>
+                <li><span>مبانی برنامه نویسی و تفکر الگوریتمی</span></li>
+                <li><span>تحلیل داده مقدماتی با پایتون</span></li>
+                <li><span>تحلیل داده پیشرفته</span></li>
               </ul>
             </div>
             <div className="detailbtn">

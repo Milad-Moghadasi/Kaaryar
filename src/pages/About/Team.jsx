@@ -24,7 +24,7 @@ import consultant7 from "../../img/about/team/consultant/consultant7.jpg"
 
 function Team() {
     return (
-        <section className='Team'>
+        <section className='team'>
             <div className="container">
                 <h1>تیم کاریار</h1>
                 <div className="members_advisors">

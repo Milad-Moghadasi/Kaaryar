@@ -1,5 +1,4 @@
 header {
-    height: 13vh;
 
     .container {
         display: grid;
@@ -17,10 +16,61 @@ header {
             }
         }
 
+        .resnavicon {
+            display: none;
+        }
+
         .nav {
             display: flex;
             align-items: center;
             margin-right: 2em;
+
+            .dropdown {
+
+                img {
+                    cursor: pointer;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    top: 4em;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    min-width: 160px;
+
+                    .navline {
+                        height: 1px;
+                        background-color: #0E994A;
+
+                    }
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: 1.5em;
+                        transition: 500ms;
+
+                        &.active {
+                            border: none;
+                        }
+                    }
+
+                    a:hover {
+                        background-color: rgba(10, 141, 67, 0.2);
+                        border: 1px solid #0A8D43;
+                        color: #0A8D43;
+                    }
+                }
+            }
+
+            .dropdown:hover {
+                display: block;
+
+                .dropdown-content {
+                    display: block;
+                }
+            }
 
             a {
                 padding: 0.5em 1.2em;
@@ -32,6 +82,7 @@ header {
             }
 
         }
+
 
         .enter {
             display: flex;
@@ -48,6 +99,42 @@ header {
                 cursor: pointer;
             }
 
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .logo {
+
+                img {
+                    height: 100%;
+                    width: 20%;
+                }
+            }
+
+            .resnavicon {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .enter {
+                display: none;
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-.Team {
+.team {
     .container {
         h1 {
             text-align: center;
@@ -6,17 +6,23 @@
             padding: 1em 0;
         }
 
-        .members_advisors , .members_executives , .members_consultants {
+        .members_advisors,
+        .members_executives,
+        .members_consultants {
 
             h2 {
                 padding: 1em;
             }
 
-            .advisors , .executives , .consultants {
+            .advisors,
+            .executives,
+            .consultants {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
 
-                .advisor , .executive , .consultant {
+                .advisor,
+                .executive,
+                .consultant {
                     background-image: url(../../img/about/team/background.png);
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -29,7 +35,9 @@
                     border: 1px solid #0E994A;
                     border-radius: 14px;
 
-                    .advisorpic , .executivepic , .consultantpic {
+                    .advisorpic,
+                    .executivepic,
+                    .consultantpic {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -48,12 +56,73 @@
                         }
                     }
 
-                    .advisordetail , .executivedetail , .consultantsdetail {
+                    .advisordetail,
+                    .executivedetail,
+                    .consultantdetail {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .team {
+        .container {
+            h1 {
+                margin-top: 3em;
+            }
+
+            .members_advisors,
+            .members_executives,
+            .members_consultants {
+
+                h2 {
+                    padding: 1em;
+                }
+
+                .advisors,
+                .executives,
+                .consultants {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .team {
+        .container {
+            h1 {
+                margin-top: 2em;
+            }
+
+            .members_advisors,
+            .members_executives,
+            .members_consultants {
+
+                h2 {
+                    padding: 1em;
+                }
+
+                .advisors,
+                .executives,
+                .consultants {
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    .advisor,
+                    .executive,
+                    .consultant {
+                        height: 500px;
+                    }
+
                 }
             }
         }
