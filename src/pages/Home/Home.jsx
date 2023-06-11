@@ -441,15 +441,15 @@ function Home() {
           <h1>مسیر شغلی خود را از همین امروز شروع کنید</h1>
         </div>
         <div className="icons">
-          <div className="user">
+          <div className="user icon">
             <img src={user} alt="usericon" />
             <p>به ما بپیوندید</p>
           </div>
-          <div className="student">
+          <div className="student icon">
             <img src={student} alt="studenticon" />
             <p>آموزش کاربردی ببینید </p>
           </div>
-          <div className="coins">
+          <div className="coins icon">
             <img src={coins} alt="coinsicon" />
             <p> بعد از رسیدن به درآمد هزینه‌اش را بپردازید</p>
           </div>

@@ -453,7 +453,7 @@ section.home {
 
     .volunteer {
         display: grid;
-        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-rows: 0.5fr 3fr 1fr;
         margin-top: 2em;
         margin-bottom: 2em;
 
@@ -591,6 +591,10 @@ section.home {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            h1 {
+                color: #FFFFFF;
+            }
         }
 
         .icons {
@@ -636,6 +640,197 @@ section.home {
             a {
                 color: #FFFFFF;
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.home {
+        .container {
+
+            .container1 {
+
+                .imgtext {
+                    flex-direction: column;
+                    width: 100%;
+
+                    .img {
+                        width: 60%;
+                        margin: 5em auto 0;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .text {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                height: auto;
+
+                .card {
+                    width: auto;
+                }
+            }
+
+            .howtojoin {
+
+                .kaaryarimg {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .studentcoments {
+
+            .students {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+
+        .news {
+            .bodynews {
+                margin: 0;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1em;
+
+                .newscard {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+        .institutions {
+            .bodyinstitutions {
+                grid-template-columns: repeat(2, 1fr);
+                overflow: hidden;
+            }
+        }
+
+        .jobroad {
+            .icons {
+                display: flex;
+                flex-direction: column;
+
+                .icon {
+                    padding: 1em 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.home {
+        .container {
+
+            .container1 {
+
+                .imgtext {
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+
+                    .img {
+                        width: 60%;
+                        margin: 5em auto 0;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .text {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cards {
+                display: grid;
+                grid-template-columns: 1fr;
+                height: auto;
+
+                .card {
+                    width: auto;
+                }
+            }
+
+            .howtojoin {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+
+                .howtext {
+                    width: 100%;
+                    
+
+                    p {
+                        padding: 1em 0.5em;
+                        text-align: center;
+                    }
+                }
+
+                .kaaryarimg {
+                    margin: 1em;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .kaaryareducation {
+            .items {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .news {
+            .bodynews {
+                margin: 0;
+                grid-template-columns: 1fr;
+                gap: 1em;
+
+                .newscard {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+        .volunteer {
+            grid-template-rows: 0.5fr 2fr 1fr;
+        }
+
+        .institutions {
+            .bodyinstitutions {
+                grid-template-columns: 1fr;
+                overflow: hidden;
+            }
+        }
+
+        .jobroad {
+            .icons {
+                display: flex;
+                flex-direction: column;
+
+                .icon {
+                    padding: 1em 0;
+                }
             }
         }
     }
