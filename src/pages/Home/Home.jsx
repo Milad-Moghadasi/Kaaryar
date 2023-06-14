@@ -40,7 +40,6 @@ import coins from "../../img/homesectionimg/coins.png"
 
 function Home() {
   
-
   return (
     <section className='home'>
       <div className="container">
