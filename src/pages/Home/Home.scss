@@ -57,11 +57,24 @@ section.home {
                             color: #0E994A;
                             background-color: white;
                             margin: 0 0 0 5em;
+                            transition: 1s;
+                        }
+
+                        .first-btn:hover {
+                            border: 1px solid #0A8D43;
+                            color: #0A8D43;
                         }
 
                         .second-btn {
                             background-color: #0E994A;
                             color: white;
+                            transition: 500ms;
+                        }
+
+                        .second-btn:hover {
+                            background-color: rgba(10, 141, 67, 0.2);
+                            border: 1px solid #0A8D43;
+                            color: #0A8D43;
                         }
                     }
 
@@ -143,6 +156,13 @@ section.home {
                 font-size: 16px;
                 cursor: pointer;
                 margin-top: 1em;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
         }
 
@@ -232,10 +252,6 @@ section.home {
             align-items: center;
         }
 
-        .chngicon {
-            display: flex;
-        }
-
         .students {
             display: flex;
             margin: 2em 0;
@@ -277,6 +293,7 @@ section.home {
     }
 
     .mentors {
+        height: 100vh;
 
         .headmentor {
             h2 {
@@ -285,112 +302,69 @@ section.home {
         }
 
         .bodymentor {
+            height: 80%;
             width: 100%;
             background-image: url(../../img/homesectionimg/mentorBg.png);
-            background-size: cover;
-            display: grid;
-            grid-template-columns: 30% 40% 30%;
+            background-size: contain;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2em;
 
-            .mentor2 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 45%;
-                    border-radius: 100%;
-                }
-            }
-
-            .mentor1 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .mentor {
+                height: 100%;
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                background-color: white;
                 text-align: center;
+                border: 1px solid #0E994A;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+                border-radius: 14px;
+                padding: 1em 2.5em;
 
-                h4 {
-                    margin: 1em 0;
+                .mentorimg {
+                    width: 100%;
+
+                    img {
+                        width: 50%;
+                        border-radius: 100%;
+                        border: 2px solid #0E994A;
+                    }
                 }
 
-                p {
-                    margin: 1em 0;
-                }
-
-                .pcaption {
-                    width: 75%;
-                    border: 1px solid #0E994A;
-                    border-radius: 14px;
-                    background-color: #FFFFFF;
-                    padding: 2.5em 1em;
+                .mentorimg,
+                .mentornamejob,
+                .mentordetail {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
-
-                    p {
-                        line-height: 28px;
-                        padding: 0.5em;
-
-                        .span1 {
-                            margin-left: 1em;
-                        }
-
-                        .span2 {
-                            margin-right: 1em;
-                        }
-                    }
-
-                    img {
-                        transform: rotate(180deg);
-                        width: 5%;
-                        border: none;
-                    }
-
-                }
-
-                img {
-                    width: 40%;
-                    border-radius: 100%;
-                    border: 8px solid #0E994A;
-                }
-
-                .navmentor {
-                    display: flex;
-                    align-items: center;
-
-                    a {
-                        margin: 0.2em;
-                        padding: 1em 0;
-
-                        img {
-                            border: none;
-                            border-radius: none;
-                            width: 100%;
-                        }
-                    }
-                }
-
-                button {
-                    color: #FFFFFF;
-                    background: #0E994A;
-                    border: none;
-                    border-radius: 8px;
-                    padding: 0.7em 2em;
-                    font-size: larger;
-                    cursor: pointer;
+                    flex-direction: column;
                 }
             }
 
-            .mentor3 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .mentorcenter {
+                margin-top: -10em;
+            }
+        }
 
-                img {
-                    width: 50%;
-                    height: 30%;
-                    border-radius: 100%;
-                }
+        .mentorbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                color: white;
+                background-color: #0E994A;
+                border: none;
+                padding: 1em 3em;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
         }
     }
@@ -445,6 +419,15 @@ section.home {
 
                     a {
                         color: #0E994A;
+                        padding: 1em 3em;
+                        transition: 500ms;
+                    }
+
+                    a:hover {
+                        border: 1px solid #0A8D43;
+                        border-radius: 14px;
+                        color: #0A8D43;
+                        transition: 500ms;
                     }
                 }
             }
@@ -453,7 +436,7 @@ section.home {
 
     .volunteer {
         display: grid;
-        grid-template-rows: 0.5fr 3fr 1fr;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
         margin-top: 2em;
         margin-bottom: 2em;
 
@@ -531,6 +514,13 @@ section.home {
                 padding: 1em 3em;
                 border: none;
                 cursor: pointer;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
         }
 
@@ -629,6 +619,7 @@ section.home {
                 color: #0E994A;
                 border: none;
                 background-color: #FFFFFF;
+                cursor: pointer;
             }
         }
 
@@ -666,6 +657,13 @@ section.home {
 
                     .text {
                         width: 100%;
+
+                        .cap {
+
+                            .first-btn {
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -699,6 +697,53 @@ section.home {
             }
         }
 
+        .mentors {
+            height: auto;
+
+            .bodymentor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 2em;
+
+                .mentor {
+                    height: auto;
+                    display: grid;
+                    grid-template-rows: repeat(3, 0.5fr);
+                    background-color: white;
+                    padding: 1em 3em;
+
+                    .mentorimg {
+                        width: 100%;
+                        margin-bottom: 0.5em;
+
+                        img {
+                            width: 25%;
+                            border-radius: 100%;
+                            border: 2px solid #0E994A;
+                        }
+                    }
+
+                    .mentordetail {
+                        margin-top: 0.5em;
+
+                        p {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                .mentorcenter {
+                    margin-top: 0;
+                }
+            }
+
+            .mentorbtn {
+                margin-top: 1em;
+            }
+        }
+
         .news {
             .bodynews {
                 margin: 0;
@@ -716,6 +761,11 @@ section.home {
             .bodyinstitutions {
                 grid-template-columns: repeat(2, 1fr);
                 overflow: hidden;
+
+                .institution {
+                    height: 250px;
+                    padding: 1.5em;
+                }
             }
         }
 
@@ -776,7 +826,7 @@ section.home {
 
                 .howtext {
                     width: 100%;
-                    
+
 
                     p {
                         padding: 1em 0.5em;
@@ -786,6 +836,7 @@ section.home {
 
                 .kaaryarimg {
                     margin: 1em;
+
                     img {
                         width: 100%;
                     }
@@ -807,6 +858,23 @@ section.home {
 
                 .newscard {
                     margin-left: 0;
+                }
+            }
+
+        }
+
+        .mentors {
+
+            .bodymentor {
+
+                .mentor {
+
+                    .mentordetail {
+
+                        p {
+                            width: 90%;
+                        }
+                    }
                 }
             }
 

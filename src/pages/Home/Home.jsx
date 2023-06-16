@@ -19,8 +19,6 @@ import comenticon from "../../img/homesectionimg/comenticon.png"
 import mentor1 from "../../img/homesectionimg/mentor1.jpg"
 import mentor2 from "../../img/homesectionimg/mentor2.jpg"
 import mentor3 from "../../img/homesectionimg/mentor3.jpg"
-import navmentor1 from "../../img/homesectionimg/navmentor1.png"
-import navmentor2 from "../../img/homesectionimg/navmentor2.png"
 import zahedan from "../../img/homesectionimg/zahedan.jpg"
 import tehran from "../../img/homesectionimg/Tehran.jpg"
 import data from "../../img/homesectionimg/data.jpg"
@@ -39,7 +37,7 @@ import coins from "../../img/homesectionimg/coins.png"
 
 
 function Home() {
-  
+
   return (
     <section className='home'>
       <div className="container">
@@ -187,10 +185,6 @@ function Home() {
       <div className="studentcoments container1">
         <div className="headtext">
           <h2>از مهارت آموزان کاریار بشنوید</h2>
-          <div className="chngicon">
-            <a href='.'><img src={circleRight} alt="icon" /></a>
-            <a href='.'><img src={circleLeft} alt="icon" /></a>
-          </div>
         </div>
         <div className="students">
           <div className="student">
@@ -257,32 +251,50 @@ function Home() {
           <h2>از داوطلبان کاریار بشنوید</h2>
         </div>
         <div className="bodymentor">
-          <div className="mentor2">
-            <img src={mentor2} alt="mentorpic" />
-          </div>
-          <div className="mentor1">
-            <img src={mentor1} alt="mentorpic" />
-            <h4>امیرحسین کیانی</h4>
-            <p>ارشد علوم کامپیوتر دانشگاه استنفورد<br />
-              مدیر محصول شرکت گوگل<br />
-              منتور کاریار</p>
-            <div className="pcaption">
-              <p>
-                <span className='span1'><img src={comenticon} alt="comenticon" /></span>
-                هدف من برای همکاری با کاریار کمک به توسعه‌ی دسترسی افرادی است که دسترسی کمتری به منابع دارند و امیدوارم بتوانم الگوی مثبتی برای کارآموزهای کاریار باشم.
-                <span className='span2'><img src={comenticon} alt="comenticon" /></span>
-              </p>
+          <div className="mentor">
+            <div className="mentorimg">
+              <img src={mentor2} alt="mentorimg" />
             </div>
-            <div className="navmentor">
-              <a href="."><img src={navmentor2} alt="navmentorpic" /></a>
-              <a href="."><img src={navmentor1} alt="navmentorpic" /></a>
-              <a href="."><img src={navmentor2} alt="navmentorpic" /></a>
+            <div className="mentornamejob">
+              <h5>حانیه فلاح</h5>
+              <p>ارشد مددکاری اجتماعی دانشگاه علامه طباطبایی</p>
+              <p>مددکار اجتماعی</p>
+              <p>همکار داوطلب کاریار</p>
             </div>
-            <button>ثبت نام داوطلبان</button>
+            <div className="mentordetail">
+              <p>“من تجربه کار داوطلبانه با سازمان‌های زیادی را داشته‌ام که چون اهداف و چارچوب ها برای آنها مشخص نیست، همکاری‌ام را محدود کرده‌ام. اما همکاری با کاریار من را به وجد آورده و حتی دوست دارم در حوزه‌های مختلف با کاریار همکاری کنم.“</p>
+            </div>
           </div>
-          <div className="mentor3">
-            <img src={mentor3} alt="mentorpic" />
+          <div className="mentor mentorcenter">
+            <div className="mentorimg">
+              <img src={mentor1} alt="mentorimg" />
+            </div>
+            <div className="mentornamejob">
+              <h5>امیرحسین کیانی</h5>
+              <p>ارشد علوم کامپیوتر دانشگاه استنفورد</p>
+              <p>مدیر محصول شرکت گوگل</p>
+              <p>منتور کاریار</p>
+            </div>
+            <div className="mentordetail">
+              <p>“هدف من برای همکاری با کاریار کمک به توسعه‌ی دسترسی افرادی است که دسترسی کمتری به منابع دارند و امیدوارم بتوانم الگوی مثبتی برای کارآموزهای کاریار باشم.“</p>
+            </div>
           </div>
+          <div className="mentor">
+            <div className="mentorimg">
+              <img src={mentor3} alt="mentorimg" />
+            </div>
+            <div className="mentornamejob">
+              <h5>احسان آقازاده</h5>
+              <p>لیسانس مهندسی کامپیوتر دانشگاه تهران</p>
+              <p>مربی حل تمرین کاریار</p>
+            </div>
+            <div className="mentordetail">
+              <p>“من دانشجوی ترم هشتم مهندسی کامپیوتر دانشگاه تهران و 22 ساله هستم. از طریق دانشگاه و یکی از استادان با کاریار آشنا شدم و فکر کردم که کاریار ایده خیلی قشنگی دارد و جایی هست که من میتوانم به اندازه خودم در آن موثر باشم.“</p>
+            </div>
+          </div>
+        </div>
+        <div className="mentorbtn">
+          <button>ثبت نام داوطلبان</button>
         </div>
       </div>
       <div className="news container1">
@@ -344,14 +356,6 @@ function Home() {
             <div className="slidiconleft">
               <img src={circleLeft} alt="circleleftpic" />
             </div>
-          </div>
-          <div className="navslid">
-            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
-            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
-            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
-            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
-            <a href="."><img src={navmentor2} alt="navmentor2" /></a>
-            <a href="."><img src={navmentor1} alt="navmentor2" /></a>
           </div>
         </div>
         <div className="volcap">

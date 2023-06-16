@@ -1,4 +1,5 @@
 header {
+    z-index: 2;
 
     .container {
         display: grid;
@@ -26,6 +27,7 @@ header {
             margin-right: 2em;
 
             .dropdown {
+
 
                 img {
                     cursor: pointer;
@@ -66,9 +68,11 @@ header {
 
             .dropdown:hover {
                 display: block;
+                z-index: 10;
 
                 .dropdown-content {
                     display: block;
+                    z-index: 10;
                 }
             }
 
@@ -97,6 +101,13 @@ header {
                 border: none;
                 font-size: 16px;
                 cursor: pointer;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
 
         }

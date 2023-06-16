@@ -26,6 +26,14 @@
                 border: none;
                 border-radius: 4px;
                 margin-top: 2em;
+                cursor: pointer;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
         }
     }
@@ -75,6 +83,14 @@
                 border-radius: 4px;
                 padding: 1em 3em;
                 margin: 1em;
+                cursor: pointer;
+                transition: 500ms;
+            }
+
+            button:hover {
+                background-color: rgba(10, 141, 67, 0.2);
+                border: 1px solid #0A8D43;
+                color: #0A8D43;
             }
         }
     }
@@ -93,7 +109,8 @@
         grid-template-columns: repeat(2, 1fr);
         width: 65%;
 
-        .mobileform , .mobileformbtn {
+        .mobileform,
+        .mobileformbtn {
             display: none !important;
         }
 
@@ -133,6 +150,14 @@
                     padding: 1em 9em;
                     border: none;
                     border-radius: 4px;
+                    cursor: pointer;
+                    transition: 500ms;
+                }
+
+                button:hover {
+                    background-color: rgba(10, 141, 67, 0.2);
+                    border: 1px solid #0A8D43;
+                    color: #0A8D43;
                 }
             }
 
@@ -223,7 +248,8 @@
 
         .coopform {
 
-            .mobileform , .mobileformbtn {
+            .mobileform,
+            .mobileformbtn {
                 display: none;
             }
 
@@ -283,7 +309,8 @@
                 display: none;
             }
 
-            .mobileform , .mobileformbtn {
+            .mobileform,
+            .mobileformbtn {
                 display: block !important;
             }
 
@@ -304,6 +331,7 @@
 
         .contact {
             background-image: none;
+
             .contactcards {
                 grid-template-columns: 1fr;
             }

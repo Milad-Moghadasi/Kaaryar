@@ -51,8 +51,8 @@ function Footer() {
           </div>
           <div className="social">
             <p>شبکه های اجتماعی:</p>
-            <a href='.'><img src={instagramicon} alt="instagramicon" /></a>
-            <a href='.'><img src={linkedinicon} alt="linkedinicon" /></a>
+            <a href='https://www.instagram.com/karyar.college/'><img src={instagramicon} alt="instagramicon" /></a>
+            <a href='https://www.linkedin.com/school/karyar/'><img src={linkedinicon} alt="linkedinicon" /></a>
             <a href='.'><img src={emailicon} alt="emailicon" /></a>
           </div>
         </div>
