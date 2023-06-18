@@ -1,4 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { loginContext } from "./LoginContext";
+
 import "./app.scss";
 import Layout from "./Layout/Layout.jsx";
 import Login from "./pages/Login/Login.jsx";
@@ -9,7 +12,10 @@ import Team from "./pages/About/Team";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
+
 function App() {
+  const [isLogin] = useContext(loginContext);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +25,12 @@ function App() {
           <Route path="/Cooperation" element={<Cooperation />} />
           <Route path="/Team" element={<Team />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Login" element={
+            isLogin?
+            <Navigate to="/" replace={true} />
+            :
+            <Login/>
+          }/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,5 +1,5 @@
 header {
-    z-index: 2;
+    z-index: 3;
 
     .container {
         display: grid;
@@ -25,15 +25,16 @@ header {
             display: flex;
             align-items: center;
             margin-right: 2em;
+            z-index: 100;
 
             .dropdown {
-
-
+                
                 img {
                     cursor: pointer;
                 }
 
                 .dropdown-content {
+                    background-color: white;
                     display: none;
                     position: absolute;
                     top: 4em;
@@ -64,17 +65,13 @@ header {
                         color: #0A8D43;
                     }
                 }
-            }
 
-            .dropdown:hover {
-                display: block;
-                z-index: 10;
-
-                .dropdown-content {
+                .open {
                     display: block;
-                    z-index: 10;
                 }
             }
+
+            
 
             a {
                 padding: 0.5em 1.2em;
@@ -112,6 +109,10 @@ header {
 
         }
     }
+
+    .resnav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -146,6 +147,44 @@ header {
             .enter {
                 display: none;
             }
+        }
+
+        .container {
+
+
+            .resnav {
+                width: 100%;
+
+                a {
+                    padding: 1em;
+                    background-color: rgba(10, 141, 67, 0.2);
+                    color: #0A8D43;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 1px;
+                }
+
+                button {
+                    padding: 1em 3em; 
+                    background-color: #0E994A;
+                    margin: 1em;
+                    border: none;
+                    a {
+                        color: white;
+                    }
+
+
+
+                }
+            }
+
+            .open {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
         }
     }
 }

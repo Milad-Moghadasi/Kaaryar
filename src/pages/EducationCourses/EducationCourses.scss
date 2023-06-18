@@ -144,6 +144,18 @@ section.EducationCourses {
             }
         }
 
+        .backendroadmapcards {
+
+            .roadmapcard {
+
+                .backendhead {
+                    img {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+
         .othercoursecards {
             grid-template-columns: repeat(2 ,1fr);
         }
@@ -152,6 +164,19 @@ section.EducationCourses {
 
 @media only screen and (max-width: 600px) {
     section.EducationCourses {
+
+        .backendroadmapcards {
+
+            .roadmapcard {
+
+                .backendhead {
+                    img {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+
         .othercoursecards {
             grid-template-columns: 1fr;
         }

@@ -1,4 +1,5 @@
 import './Home.scss';
+import  Slider  from '../../component/slider/slider';
 import boy from "../../img/homesectionimg/boy.png"
 import onclassicon from "../../img/homesectionimg/onclassicon.png"
 import projecticon from "../../img/homesectionimg/projecticon.png"
@@ -9,8 +10,6 @@ import backendicon from "../../img/homesectionimg/backendicon.png"
 import frontendicon from "../../img/homesectionimg/frontendicon.png"
 import ICDLicon from "../../img/homesectionimg/ICDLicon.png"
 import dataanalysisicon from "../../img/homesectionimg/dataanalysisicon.png"
-import circleLeft from "../../img/homesectionimg/circleLeft.png"
-import circleRight from "../../img/homesectionimg/circleRight.png"
 import student1 from "../../img/homesectionimg/student1.png"
 import student2 from "../../img/homesectionimg/student2.png"
 import student3 from "../../img/homesectionimg/student3.png"
@@ -22,7 +21,6 @@ import mentor3 from "../../img/homesectionimg/mentor3.jpg"
 import zahedan from "../../img/homesectionimg/zahedan.jpg"
 import tehran from "../../img/homesectionimg/Tehran.jpg"
 import data from "../../img/homesectionimg/data.jpg"
-import volpic from "../../img/homesectionimg/volpic.png"
 import institution1 from "../../img/homesectionimg/institution1.png"
 import institution2 from "../../img/homesectionimg/institution2.png"
 import institution3 from "../../img/homesectionimg/institution3.png"
@@ -347,15 +345,7 @@ function Home() {
         </div>
         <div className="volbody">
           <div className="slidshow">
-            <div className="slidiconright">
-              <img src={circleRight} alt="circleRightpic" />
-            </div>
-            <div className="slidmainpic">
-              <img src={volpic} alt="volpic" />
-            </div>
-            <div className="slidiconleft">
-              <img src={circleLeft} alt="circleleftpic" />
-            </div>
+            <Slider />
           </div>
         </div>
         <div className="volcap">

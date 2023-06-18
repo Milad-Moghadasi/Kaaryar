@@ -52,6 +52,7 @@
                     padding: 0.5em 2.5em;
                     cursor: pointer;
                 }
+
             }
 
             .left {
@@ -102,9 +103,16 @@
                     button {
                         background: #0E994A;
                         color: #fff;
-                        border: none;
                         padding: 1em;
+                        border: 1px solid #0A8D43;
                         cursor: pointer;
+                        transition: 500ms;
+                    }
+
+                    button:hover {
+                        background-color: rgba(10, 141, 67, 0.2);
+                        border: 1px solid #0A8D43;
+                        color: #0A8D43;
                     }
 
                     p.cooki {

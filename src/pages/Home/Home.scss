@@ -12,7 +12,7 @@ section.home {
             .img {
                 margin-right: 3em;
                 width: 40%;
-
+                
                 img {
                     height: 100%;
 
@@ -449,30 +449,30 @@ section.home {
 
             .slidshow {
                 display: grid;
-                grid-template-columns: 1fr 8fr 1fr;
+                z-index: -1;
 
-                .slidiconright {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    padding: 0 0 0 1em;
-                    cursor: pointer;
-                }
+                // .slidiconright {
+                //     display: flex;
+                //     justify-content: flex-end;
+                //     align-items: center;
+                //     padding: 0 0 0 1em;
+                //     cursor: pointer;
+                // }
 
-                .slidiconleft {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    padding: 0 1em 0 0;
-                    cursor: pointer;
-                }
+                // .slidiconleft {
+                //     display: flex;
+                //     justify-content: flex-start;
+                //     align-items: center;
+                //     padding: 0 1em 0 0;
+                //     cursor: pointer;
+                // }
 
-                .slidmainpic {
+                // .slidmainpic {
 
-                    img {
-                        width: 100%;
-                    }
-                }
+                //     img {
+                //         width: 100%;
+                //     }
+                // }
             }
 
             .navslid {
