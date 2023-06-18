@@ -40,9 +40,7 @@ function Header() {
             </div>
           </div>
           <div className="dropdown">
-            <NavLink to="/about">
-              همکاری با کاریار
-            </NavLink>
+            <NavLink to="/about">درباره کاریار</NavLink>
             <img src={dropdown} alt="dropdown" onClick={() => setAnotherOpen(!anotherOpen)} />
             <div className={
               anotherOpen ? "dropdown-content open" : "dropdown-content"
